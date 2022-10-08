@@ -1,0 +1,54 @@
+header {
+  background-color: #222;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 2.8em;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  margin: 1em;
+  margin-left: 1em;
+  font-size: 1.5em;
+}
+
+header h1,
+a {
+  color: #00e0ff;
+  transition: 0.15s ease-in;
+}
+
+header a:hover,
+h1:hover {
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    
+    header nav{
+        margin-top: 16px;        
+    }
+
+    header h1{
+        font-size: 2.2em;
+    }
+
+    header nav a {
+        font-size: 1.2em;
+    }
+}
