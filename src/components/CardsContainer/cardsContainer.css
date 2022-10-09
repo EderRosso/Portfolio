@@ -1,0 +1,31 @@
+.techs {
+  animation: slideTechs 1.2s;
+}
+
+@keyframes slideTechs {
+  from {
+    transform: translateY(60px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .techs {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards-container {
+    margin-top: 32px;
+  }
+}

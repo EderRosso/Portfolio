@@ -1,5 +1,5 @@
 import { SocialLink} from "./SocialLink";
-import './styles.css';
+import './header.css';
 
 export function Header() {
     return (

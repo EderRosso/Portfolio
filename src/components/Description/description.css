@@ -1,0 +1,36 @@
+.text {
+  margin-bottom: 10%;
+  animation: slideContent 1.2s;
+}
+
+@keyframes slideContent {
+  from {
+    transform: translateX(-60px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.text p {
+  width: 80%;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+@media (max-width: 1200px) {
+  .text {
+    text-align: center;
+  }
+
+  .text p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .text p {
+    font-size: 0.9em;
+  }
+}
